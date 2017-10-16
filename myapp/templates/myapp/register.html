@@ -1,0 +1,72 @@
+<html>
+    <head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="/static/myapp/register.js"></script> 
+		<title>Registration Form</title>
+    </head>
+    <body>
+    	<div>
+        	<form name="myForm" method="post" id="myForm">
+                <table id="tableid">
+                    <tr>
+                        <th>Name</th>
+                        <td>
+                            <input type="text" name="name" id="name"></td>
+                        <td><span id="span1"></span></td>
+                    </tr>
+
+                    <tr>
+                        <th>DOB</th>
+
+                        <td>
+                            <input type="date" name="dob" id="dob" class="dob" data-dob = "Default" /></td>
+                        <td><span id="span2"></span></td>
+                    </tr>
+					
+                    <tr>
+                        <th>Skills</th>
+                        <td>
+                            <input type="checkbox" class="skill" name="skill" id="skill1" value="VMWARE"> VMWARE <br>
+							<input type="checkbox" class="skill" name="skill" id="skill2" value="LINUX"> LINUX<br>
+							<input type="checkbox" class="skill" name="skill" id="skill3" value="STORAGE"> STORAGE<br> </td>
+                        <td> <span id="span3"></span></td>
+                    </tr>
+					<tr>
+						<th>
+							Hobbies:	   
+						</th>
+						<td>
+							<select multiple="multiple" name="hobbieselect" id="hobbieselect">
+							<option value="reading" name="reading" id="reading">Reading</option>
+							<option value="singing" name="singing" id="singing">Singing</option>
+							<option value="playing" name="playing" id="playing">Playing</option>
+							<option value="running" name="running" id="running">Running</option>
+							</select> 
+						</td>
+						<td> <span id="span4"></span></td>
+					</tr>
+					<tr>
+						<th>
+							Select Gender:
+						</th>
+						<td>
+							<input type="radio" name="gender" value="male" > Male<br>
+							<input type="radio" name="gender" value="female"> Female
+						</td>			
+						<td> <span id="span5"></span></td>
+					</tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" id="mybutton" name="mybutton" value="Submit" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <div id="myTable">
+            </div>
+        </div>
+    </body>
+</html>
+
+
